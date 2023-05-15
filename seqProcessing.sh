@@ -32,5 +32,5 @@ for file in *.fq.gz; do mv $file trimmed; done
 for file in *.txt; do mv $file trimmed; done
 
 mkdir fullAlignmentFiles
-for file in *.sam; do mv $file samFiles; done
-for file in *.bam; do mv $file samFiles; done
+for file in *.sam; do mv $file fullAlignmentFiles; done
+for file in *.bam; do mv $file fullAlignmentFiles; done
