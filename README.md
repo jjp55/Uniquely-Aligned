@@ -6,7 +6,9 @@ This script will utilize trim_galore, bowtie2 and samtools for QC, alignment, an
 To install these packages through conda please create a new environment and run the following commands
 
 conda install -c bioconda trim-galore
+
 conda install -c bioconda bowtie2
+
 conda install -c bioconda samtools
 
 These index files can then be views in genome viewers, such as IGV. 
