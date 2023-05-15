@@ -3,7 +3,7 @@ Shell script for generating uniquely mapped bam/index files from Illumina Next-S
 
 This script will utilize trim_galore, bowtie2 and samtools for QC, alignment, and duplicate removal to generate uniquely mapped read BAM files with indexes. 
 
-To install these packages through conda please create a new environment and run the following commands
+To install these packages through conda please create a new environment and run the following commands:
 
 conda install -c bioconda trim-galore
 
