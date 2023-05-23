@@ -14,3 +14,6 @@ conda install -c bioconda samtools
 These index files can then be views in genome viewers, such as IGV. 
 
 This script is made for paired-end reads generated from Illumina Next-Seq. Before running this script check your file naming. The script expects an ending of R1_001.fastq.gz. If this is not how your file is format, please edit line 2 and likely line 5 (based on the ouput received from trim_galore). Additionally, please change line 5's "/Path/To/Bowtie/Index" to your actual path. 
+
+
+Under the single reads branch, the same steps will be performed, however, it expects single read fastq.gz files
