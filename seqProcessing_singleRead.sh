@@ -2,7 +2,7 @@ echo Trimming Reads
 for file in *fastq.gz; do trim_galore $file; done
 
 echo Aligning
-for file in *.fq.gz; do bowtie2 -x /Path/To/Index/ -U $file "`basename $file .fq.gz`.sam"; done
+for file in *.fq.gz; do bowtie2 -x /Path/To/Index/ -U $file -S "`basename $file .fq.gz`.sam"; done
 
 echo Removing Duplicate Reads and Indexing
 for file in *.sam; do samtools view -S -b $file > "`basename $file .sam`.bam"; done
